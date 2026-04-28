@@ -1,9 +1,8 @@
 {
   "outputDirectory": ".",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://www.igloo.inc/$1"
-    }
+  "routes": [
+    { "src": "^/$", "dest": "/index.html" },
+    { "handle": "filesystem" },
+    { "src": "/(?<path>.*)", "dest": "https://www.igloo.inc/$path" }
   ]
 }
