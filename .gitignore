@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+
+# Development/debug files
+debug_*.js
+debug_billboard2.js
+make_vdb.py
+scene.html
+
+# Source assets not needed for deployment
+ski/
+ski glass/
+billboard/
+billboard 2/
